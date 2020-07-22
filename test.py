@@ -16,5 +16,12 @@ class Canvas():
         self.canvas = Image.new("RGB", (self.width, self.height), "white")
         self.pix = self.canvas.load()
 
-def circle():
-    print("Hello world!")
+def circle(can):
+    name = str("abc") + ".png"
+    print(name)
+    print(can.canvas)
+    # image = np.array(canvas.canvas)
+    can.canvas.save(name)
+
+can = Canvas()
+circle(can)
